@@ -1,0 +1,114 @@
+.project-filtres-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .project-filtres-item:not(:last-child) {
+    margin-right: 8px;
+  }
+  .btn {
+    padding: 6px 22px;
+  
+    color: var(--main-text-color);
+    background-color: #f5f4fa;
+  
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    border-radius: 4px;
+    transition: background-color var(--transition-duration) var(--timing-function),
+      color var(--transition-duration) var(--timing-function),
+      box-shadow var(--transition-duration) var(--timing-function);
+  }
+  .btn:focus,
+  .btn:hover {
+    color: #ffffff;
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  .projects-list .link {
+    display: block;
+    transition: box-shadow var(--transition-duration) var(--timing-function);
+  }
+  .projects-list .link:focus,
+  .projects-list .link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .projects-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  .projects-thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  .projects-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+  
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(101%);
+    transition: transform var(--transition-duration) var(--timing-function);
+    overflow-y: auto;
+  }
+  
+  .projects-link:hover .projects-description,
+  .projects-link:focus .projects-description {
+    transform: translateY(0);
+  }
+  
+  .card-content {
+    padding: 20px 24px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+  
+  .project-name {
+    margin-bottom: 4px;
+  
+    color: var(--main-text-color);
+  
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    transition: color var(--transition-duration) var(--timing-function);
+  }
+  
+  .project-type {
+    color: var(--secondary-text-color);
+  
+    font-size: 18px;
+    line-height: 1.87;
+    transition: color var(--transition-duration) var(--timing-function);
+  }
+  
+  .project-name:focus,
+  .project-name:hover,
+  .project-type:focus,
+  .project-type:hover {
+    color: var(--accent-color);
+  }
+  

@@ -1,0 +1,75 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+  }
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer__title {
+    margin-bottom: 20px;
+  
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+  
+    color: #ffffff;
+  }
+  .footer__subscribe {
+    margin-left: auto;
+    width: 570px;
+  }
+  .footer__address {
+    margin-right: 70px;
+  }
+// ADDRESS 
+
+  .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
+  .address__link {
+    color: var(--footer-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    transition: color var(--transition-duration) var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &--color {
+      color: #ffffff;
+    }
+  }
+
+  // SUBSCRIBE FORM
+  .subscribe-form {
+    display: flex;
+    &__input {
+      margin-right: 12px;
+      padding: 15px 16px;
+      flex-grow: 1;
+      outline: none;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      background-color: transparent;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: #ffffff;
+      &::placeholder {
+        color: var(--footer-text-color);
+      }
+    }
+  
+  }
+  
+
+  
+  
+  
+
+  
+  

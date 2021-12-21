@@ -422,7 +422,6 @@ img {
 }
 
 .header {
-  position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
@@ -435,6 +434,7 @@ img {
 }
 
 .header__container {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -565,11 +565,12 @@ img {
 
 .header__menu-btn {
   position: absolute;
-  right: 0;
+  right: 15px;
   top: 10px;
   background-color: transparent;
   color: #000000;
   transition: color var(--transition-duration) var(--timing-function);
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -599,10 +600,10 @@ img {
 }
 
 .dropdown-menu {
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: 100%;
-  width: 80%;
+  top: 0;
+  width: 1000%;
   display: none;
 }
 

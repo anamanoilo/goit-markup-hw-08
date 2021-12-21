@@ -2,11 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: -30px;
+    margin-left: -30px;
     margin-bottom: -30px;
   }
   .clients-list__item {
-    margin-right: 30px;
+    margin-left: 30px;
     margin-bottom: 30px;
     height: 92px;
     @include mq(mobile-only) {

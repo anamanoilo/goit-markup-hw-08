@@ -1,12 +1,27 @@
 
   .feature-list {
-    display: flex;
+    margin-right: -30px;
+    margin-bottom: -30px;
+    
+    @media screen and (min-width:768px){
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+    
   }
   .feature-list__item {
     margin-right: 30px;
-    &:last-child {
-      margin-right: 0px;
+    margin-bottom: 30px;
+    
+    @media screen and (min-width:768px){
+      flex-basis: calc((100% - 60px) / 2);
     }
+    @media screen and (min-width:1200px){
+      flex-basis: calc((100% - 120px) / 4);
+    
+    }
+    
   }
   
   

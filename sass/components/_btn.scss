@@ -1,0 +1,36 @@
+.primary-btn {
+    width: 200px;
+    min-height: 50px;
+  
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background-color var(--transition-duration) var(--timing-function);
+    &:hover,
+    &:focus {
+    background-color: var(--hover-btn-color);
+    }
+    
+    &--position {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon {
+      margin-left: 10px;
+    }
+  }
+
+  .form-btn {
+    align-self: center;
+  }
+  
+  
+  
+  

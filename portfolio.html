@@ -12,12 +12,12 @@
 </head>
 <body>
     <!-- Website header -->
-    <header class="header header--border">
+    <header class="header">
         <div class="container header__container">
             <nav class="header__nav">
                 <a href="./index.html" class="logo header-logo link"><span class="logo-accent">Web</span>Studio</a>
                 <ul class="site-nav list">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link link">Студия</a></li>
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link link ">Студия</a></li>
                     <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current link">Портфолио</a></li>
                     <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
                 </ul>
@@ -34,9 +34,15 @@
                     </svg>
                     +38 096 111 11 11</a></li>
             </ul>
+            <button class="header__menu-btn" type="button" data-menu-button>
+                <svg class="header__menu-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                    
+                </svg>
+            </button>
         </div>
         
-    </header>
+    </header> 
     <!-- Main content -->
     <main>
         <section class="projects section">
@@ -270,5 +276,6 @@
             
         </div> 
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

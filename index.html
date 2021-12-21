@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- Website header -->
-    <header class="header">
+     <header class="header">
         <div class="container header__container">
             <nav class="header__nav">
                 <a href="./index.html" class="logo header-logo link"><span class="logo-accent">Web</span>Studio</a>
@@ -35,9 +35,45 @@
                     </svg>
                     +38 096 111 11 11</a></li>
             </ul>
+            <button class="header__menu-btn" type="button"  aria-controls="dropdown-menu"  data-menu-button>
+                <svg class="header__menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    <use class="icon-menu-close"href="./images/icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+            <div class="dropdown-menu" id="dropdown-menu" data-menu>
+                <ul class="dropdown-menu__list list">
+                    <li class="dropdown-menu__item"><a href="./index.html" class="dropdown-menu__link  link ">Студия</a></li>
+                    <li class="dropdown-menu__item"><a href="./portfolio.html" class="dropdown-menu__link link">Портфолио</a></li>
+                    <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link link">Контакты</a></li>
+                </ul>
+                <ul class="dropdown-contacts list">
+                    <li class="dropdown-contacts__item"><a href="tel:+380961111111" class="dropdown-contacts__link link">
+                        +38 096 111 11 11</a></li>
+                    <li class="dropdown-contacts__item"><a href="mailto:info@devstudio.com" class="dropdown-contacts__link link">
+                        
+                        info@devstudio.com</a></li>
+                    
+                </ul>
+                <ul class="dropdown-socials list">
+                    <li class="dropdown-socials__item"><a class="dropdown-socials__link  href=""  target="_blank" rel="noopener noreferrer">
+                        Instagram
+                    </a></li>
+                    <li class="dropdown-socials__item"><a class="dropdown-socials__link href=""  target="_blank" rel="noopener noreferrer">
+                        Twitter
+                        
+                    </a></li>
+                    <li class="dropdown-socials__item"><a class="dropdown-socials__link href=""  target="_blank" rel="noopener noreferrer">
+                        Facebook
+                    </a></li>
+                    <li class="dropdown-socials__item"><a class="dropdown-socials__link href=""  target="_blank" rel="noopener noreferrer">
+                        Linkedin
+                    </a></li>
+                </ul>
+            </div>
         </div>
         
-    </header>
+    </header> 
     <!-- Main content -->
     <main>
         <!-- Hero section -->
@@ -119,7 +155,7 @@
                 </ul>
             </div>                 
             
-        </section>
+        </section> 
         <!-- Our team -->
         <section class="section team">
             <div class="container">
@@ -342,7 +378,6 @@
                 </ul>
             </div>
             
-        <!-- Clients -->
         </section>
         <section class="section">
             <div class="container">
@@ -406,7 +441,7 @@
                 </ul>
 
             </div>
-        </section>
+        </section> 
 
     </main>
 
@@ -537,6 +572,7 @@
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/animate.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html

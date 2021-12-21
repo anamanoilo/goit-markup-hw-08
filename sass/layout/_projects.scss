@@ -3,10 +3,9 @@
     flex-wrap: wrap;
     margin-right: -8px;
     margin-top: -15px;
-    @include mq(mobile) {
     justify-content: flex-start;
     margin-bottom: 40px;
-    }
+    
     @include mq(tablet) {
       justify-content: center;
       margin-bottom: 30px;
@@ -51,9 +50,8 @@
   .projects-item {
     margin-right: 30px;
     margin-bottom: 30px;
-    @include mq(mobile) {
-      flex-basis: 100%;
-    }
+    flex-basis: 100%;
+    
     @include mq(tablet) {
       flex-basis: calc((100% - 60px) / 2);
     }

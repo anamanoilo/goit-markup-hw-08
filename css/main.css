@@ -929,7 +929,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .hero__title {
     max-width: 360px;
     font-size: 26px;
@@ -996,6 +996,12 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+@media (max-width: 767.98px) {
+  .feature-list__title {
+    text-align: center;
+  }
 }
 
 .feature-list__text {
@@ -1065,9 +1071,26 @@ img {
 .team-list__item {
   margin-bottom: 30px;
   margin-left: 30px;
-  width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media (max-width: 767.98px) {
+  .team-list__item {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-list__item {
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-list__item {
+    width: 270px;
+  }
 }
 
 .team-list__content {

@@ -6,6 +6,7 @@
   height: 100%;
   background-color: var(--modal-bg-color);
   opacity: 1;
+  z-index: 3;
   transition: opacity 250ms var(--timing-function);
   overflow-y: scroll;
   &.is-hidden {
